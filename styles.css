@@ -112,12 +112,15 @@ line-height: normal;
 .profile-container {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+  .rectangles{
+    width: 30%;
+   
+  }
   .profile-pic img {
     width: 100px;
     height: 100px;
@@ -140,4 +143,31 @@ line-height: normal;
     font-size: 14px;
     color: #555;
   }
-  
+  .testimonials{
+    padding: 0% 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .review-data{
+    
+    margin-left: 5%;
+  }
+  .review-data::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust this value to control the position of the line */
+    height: 100%;
+    width: 1px;
+    background-color: #ec7c21;
+  }
+  @media (max-width: 600px) {
+    .rectangle {
+      flex-wrap: wrap; /* Allow items to wrap to a new line */
+    }
+    
+    .review-data {
+      margin-top: 10px; /* Add spacing between profile picture and details */
+    }
+  }
