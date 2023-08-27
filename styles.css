@@ -144,9 +144,11 @@ line-height: normal;
     color: #555;
   }
   .testimonials{
+    fill: #F8F8F8;
     padding: 0% 10%;
     margin-top: 10%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .review-data{
@@ -162,12 +164,12 @@ line-height: normal;
     width: 1px;
     background-color: #ec7c21;
   }
-  @media (max-width: 600px) {
-    .rectangle {
-      flex-wrap: wrap; /* Allow items to wrap to a new line */
-    }
-    
-    .review-data {
-      margin-top: 10px; /* Add spacing between profile picture and details */
-    }
+  .having-good{
+    color: var(--food-delivery-p, #69697B);
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 172.727% */
   }
+ 
